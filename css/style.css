@@ -149,7 +149,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 		font-size: 20px;
 	}
 }
-@media only screen and (min-width: 481px) {
 	.intro {
 		display: table;
 		width: 100%;
@@ -162,7 +161,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 		background-size: cover;
 		-o-background-size: cover;
 	}
-}
 
 .intro .overlay {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d5dade+100&0.5+0,0+100 */
