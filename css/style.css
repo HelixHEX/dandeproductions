@@ -132,7 +132,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background-color: #444;
 }
 /* Header Section */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
 	.intro {
 		display: table;
 		width: 100%;
@@ -156,7 +156,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 		padding: 0;
 		margin-bottom: 80px;
 		background: url(../img/intro-bg.jpg) no-repeat right top;
-		background-color: #e5e5e5;
+		background-color: white;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		background-size: cover;
