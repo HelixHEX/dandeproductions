@@ -35,6 +35,10 @@
 
   gtag('config', 'UA-153189395-1');
 </script>
+<link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet" />
+
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,6 +49,13 @@
 </head>
 <body>
 <!-- Header -->
+<div class="videoModal">
+  <video id="vid1" width="800" height="500">
+    <source src="./video/djexplosion.mp4" type="video/mp4">
+    <source src="./video/djexplosion.mp4" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+=</div>
 <header id="header">
   <div class="intro">
     <div class="overlay">
@@ -75,15 +86,15 @@
         <li>
           <ol class="type">
             <li><a href="#" data-filter="*" class="active">All</a></li>
-            <!-- <li><a href="#" data-filter=".lorem">Photos</a></li>
-            <li><a href="#" data-filter=".dolor">Videos</a></li> -->
+            <li><a href="#" data-filter=".photos">Photos</a></li>
+            <li><a href="#" data-filter=".videos">Videos</a></li>
           </ol>
         </li>
       </ul>
     </div>
     <div class="row">
       <div class="portfolio-items">
-        <div class="col-sm-6 col-md-4 lorem">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/CleansingBalm.jpg" title="Glow Recipe Cleansing Balm" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -96,7 +107,7 @@
               <img src="img/portfolio/CleansingBalm.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 adipiscing">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/airpods&applewatch.jpg" title="Apple" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -109,7 +120,7 @@
               <img src="img/portfolio/airpods&applewatch.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 lorem">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/HennessyGlasses.jpg" title="Hennessey V.S" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -122,7 +133,7 @@
               <img src="img/portfolio/HennessyGlasses.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 lorem">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/skinfix.jpg" title="Skinfix Renewing Scrub" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -135,7 +146,7 @@
               <img src="img/portfolio/skinfix.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 adipiscing">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/mrdeesconcert.jpg" title="Mr.Dees #concert" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -148,7 +159,7 @@
               <img src="img/portfolio/mrdeesconcert.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 dolor">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/ObscureColgne.jpg" title="Obscure Cologne" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -161,7 +172,7 @@
               <img src="img/portfolio/ObscureColgne.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 dolor">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/ngima&njambi.jpg" title="Summer Vibes" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -174,7 +185,23 @@
               <img src="img/portfolio/ngima&njambi.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <!-- <div class="col-sm-6 col-md-4 lorem">
+        <div class="col-sm-6 col-md-4 videos">
+          <a style="cursor: pointer;" class="showVid">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="hover-text">
+                <div class="overlay-caption">
+                  <div class="overlay-content">
+                    <h4>Summer Vibes</h4>
+                  </div>
+                </div>
+              </div>
+              <img src="img/portfolio/ngima&njambi.jpg" class="img-responsive" alt="Project Title"> </div>
+          </div>
+          </a>
+        </div>
+
+        <!-- <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -187,7 +214,7 @@
               <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 adipiscing">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -200,7 +227,7 @@
               <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 adipiscing">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/10-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -213,7 +240,7 @@
               <img src="img/portfolio/10-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 adipiscing">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/11-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -226,7 +253,7 @@
               <img src="img/portfolio/11-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 lorem">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/12-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -239,7 +266,7 @@
               <img src="img/portfolio/12-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 adipiscing">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/13-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -252,7 +279,7 @@
               <img src="img/portfolio/13-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 dolor">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/14-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -265,7 +292,7 @@
               <img src="img/portfolio/14-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 dolor">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/15-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -278,7 +305,7 @@
               <img src="img/portfolio/15-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 lorem">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/16-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -291,7 +318,7 @@
               <img src="img/portfolio/16-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 adipiscing">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/17-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -304,7 +331,7 @@
               <img src="img/portfolio/17-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 lorem">
+        <div class="col-sm-6 col-md-4 photos">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/18-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
@@ -383,6 +410,7 @@
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
+<script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
 <script type="text/javascript">
   var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
@@ -441,5 +469,6 @@
         document.body.appendChild(css);
     };
 </script>
+<script src="js/videoplayer.js" text="text/javascript"></script>
 </body>
 </html>
