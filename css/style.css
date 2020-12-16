@@ -128,7 +128,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background-color: #444;
 }
 /* Header Section */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1324px) {
 	.intro {
 		display: table;
 		width: 100%;
@@ -151,7 +151,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 		margin-top: 40px;
 	}
 }
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 1325px) {
 	.intro {
 		display: table;
 		width: 100%;
